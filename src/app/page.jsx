@@ -2,6 +2,8 @@ import WipBox from "@/components/devStatus/wipBox";
 import styles from "./home.module.scss";
 import PageHero from "@/components/pageHero/pageHero";
 
+import "material-symbols/outlined.css";
+
 const Home = () => {
   return (
     <div className={styles.container}>

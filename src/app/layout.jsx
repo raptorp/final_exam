@@ -1,6 +1,8 @@
 import { Open_Sans } from "next/font/google";
+
 import "./globals.scss";
 import "./globalicons.scss";
+
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
