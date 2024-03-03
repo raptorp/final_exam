@@ -1,10 +1,10 @@
-import styles from "./account.module.scss";
+import styles from "./banner.module.scss";
 import { auth } from "@/lib/auth";
 import Dashboard from "@/components/containers/dashboard/dashboard";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Player Account",
+  title: "Banner",
   description: "description here _#",
 };
 
