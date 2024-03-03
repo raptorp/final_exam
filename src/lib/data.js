@@ -62,6 +62,17 @@ export const getCharacter = async (id) => {
   }
 };
 
+export const getAllCharacters = async () => {
+  try {
+    connectToDb();
+    const allCharacters = await Character.find();
+    return allCharacters;
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to fetch all characters!");
+  }
+};
+
 export const getCharacters = async () => {
   const session = await auth();
 

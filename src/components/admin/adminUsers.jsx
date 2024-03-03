@@ -23,7 +23,7 @@ const AdminUsers = async () => {
             <div className={styles.user__container} key={user.id}>
               <div className={styles.user__detail}>
                 <Image
-                  src={user.img || noAvatar}
+                  src={user.userImg || noAvatar}
                   alt=""
                   width={50}
                   height={50}

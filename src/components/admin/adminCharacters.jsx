@@ -1,4 +1,4 @@
-import { getCharacters } from "@/lib/data";
+import { getAllCharacters } from "@/lib/data";
 import styles from "./adminComponent.module.scss";
 import Image from "next/image";
 import { deleteUser } from "@/lib/actions";
@@ -7,7 +7,7 @@ import Card from "@/components/containers/card/card";
 import noAvatar from "../../../public/images/noavatar.png";
 
 const AdminCharacters = async () => {
-  const characters = await getCharacters();
+  const characters = await getAllCharacters();
 
   return (
     <Card>
