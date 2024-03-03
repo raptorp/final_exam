@@ -5,7 +5,7 @@ import { getUser } from "@/lib/data";
 import SmallInfoCard from "../smallInfoCard/smallInfoCard";
 import TinyCard from "../tinyCard/tinyCard";
 
-import noAvatar from "../../../../public/images/noAvatar.png";
+import noAvatar from "../../../../public/images/noavatar.png";
 
 const ProfileCard = async () => {
   const user = await getUser();

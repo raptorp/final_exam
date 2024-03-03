@@ -4,7 +4,7 @@ import styles from "./dashboardCards.module.scss";
 import { getCharacters } from "@/lib/data";
 import SmallInfoCard from "../smallInfoCard/smallInfoCard";
 
-import noAvatar from "../../../../public/images/noAvatar.png";
+import noAvatar from "../../../../public/images/noavatar.png";
 
 const FocusCard = async () => {
   let characters = await getCharacters();

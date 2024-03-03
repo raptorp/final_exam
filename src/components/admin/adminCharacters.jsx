@@ -4,7 +4,7 @@ import Image from "next/image";
 import { deleteUser } from "@/lib/actions";
 import Card from "@/components/containers/card/card";
 
-import noAvatar from "../../../public/images/noAvatar.png";
+import noAvatar from "../../../public/images/noavatar.png";
 
 const AdminCharacters = async () => {
   const characters = await getCharacters();
