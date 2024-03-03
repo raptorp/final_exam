@@ -1,0 +1,101 @@
+.dashboard {
+  &__container {
+    background-color: var(--card-color);
+
+    display: grid;
+    gap: 1.625rem;
+
+    grid-template-columns: 7fr 9fr 8fr;
+    grid-template-areas:
+      "header header header"
+      "profile focus stats"
+      "profile list settings";
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__profile {
+    grid-area: profile;
+  }
+
+  &__characterFocus {
+    grid-area: focus;
+  }
+
+  &__characterList {
+    grid-area: list;
+  }
+
+  &__membersList {
+    grid-area: focus / focus / list / list;
+  }
+
+  &__stats {
+    grid-area: stats / stats / settings / settings;
+  }
+}
+
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 6px 18px;
+
+    color: var(--color-green-dark);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    > * {
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+// *******************
+// ***** LAPTOPS *****
+// *******************
+
+@media (max-width: 1180px) {
+  .dashboard {
+    &__container {
+      gap: 20px;
+
+      grid-template-columns: 7fr 10fr 7fr;
+    }
+  }
+}
+
+// *******************
+// ***** TABLETS *****
+// *******************
+
+@media (max-width: 1024px) {
+  .dashboard {
+    &__container {
+      gap: 20px;
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

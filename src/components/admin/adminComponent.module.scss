@@ -1,0 +1,151 @@
+@mixin form-input-style {
+  padding: 0.75rem 1rem;
+  background-color: var(--color-light);
+  background-color: rgba(16, 16, 16, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-green-dark);
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    button {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      background-color: var(--color-green-medium);
+      border: none;
+      border-radius: 5px;
+      color: var(--color-light);
+      font-weight: bold;
+    }
+
+    .submitButton {
+    }
+  }
+}
+
+.form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    button {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      background-color: var(--color-green-medium);
+      border: none;
+      border-radius: 5px;
+      color: var(--color-light);
+      font-weight: bold;
+    }
+
+    .submitButton {
+    }
+  }
+}
+
+.card {
+  &__header {
+    border-bottom: 2px solid rgba(16, 16, 16, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.125rem 10px;
+
+    min-height: 42px;
+
+    &__title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      font-size: 16px;
+
+      color: var(--color-green-dark);
+
+      text-transform: uppercase;
+
+      &__accent {
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.form {
+  &__container {
+    padding: 10px 1.125rem;
+
+    input,
+    textarea,
+    select,
+    option {
+      @include form-input-style;
+    }
+  }
+
+  &__resource {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+
+    select {
+      width: 70%;
+    }
+
+    input {
+      width: 30%;
+    }
+  }
+}
+
+.user {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.125rem;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    filter: grayscale(100%);
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &__name,
+    &__id {
+      font-size: 0.875rem;
+      text-transform: capitalize;
+    }
+
+    &__id {
+      font-size: 0.625rem;
+      color: var(--color-green-light);
+    }
+  }
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}

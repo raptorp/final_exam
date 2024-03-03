@@ -1,0 +1,108 @@
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0 1rem;
+  }
+
+  &__wrapper {
+    border-top: 1px solid var(--color-green-light);
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-dark);
+  }
+
+  &__logoContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &__logo {
+    font-weight: bold;
+    width: 190px;
+    height: 53px;
+    position: relative;
+  }
+
+  &__logoImg {
+    transform: rotate(90deg);
+  }
+
+  &__contact,
+  &__dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-yellow-dark);
+    padding-bottom: 0.25rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__linkText {
+    font-size: 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 12px;
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    color: gray;
+  }
+}
+
+// ***************************
+// ***** BIG SMARTPHONES *****
+// ***************************
+
+@media (max-width: 768px) {
+  .footer {
+    &__logoContact {
+      gap: 2rem;
+
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__dashboard {
+      display: none;
+    }
+  }
+}
+
+// ******************************
+// ***** MEDIUM SMARTPHONES *****
+// ******************************
+
+@media (max-width: 640px) {
+  .footer {
+    &__logoContact {
+      gap: 3rem;
+
+      flex-direction: column;
+    }
+  }
+}

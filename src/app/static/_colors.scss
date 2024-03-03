@@ -1,0 +1,41 @@
+:root {
+  // Neutrals
+  --color-light: #f2f1f0;
+  --color-light-rgb: rgb(242, 241, 240);
+
+  --color-medium: #404040;
+  --color-medium-rgb: rgb(64, 64, 64);
+
+  --color-dark: #0d0d0d;
+  --color-dark-rgb: rgb(13, 13, 13);
+
+  // Yellows
+  --color-yellow-light: #d8d1b0;
+  --color-yellow-medium: #a67d4b;
+  --color-yellow-dark: #8c693e;
+
+  // Greens
+  --color-green-light: #a1a27d;
+  --color-green-light-rgb: 161, 162, 125;
+  --color-green-medium: #757847;
+  --color-green-dark: #4e4c3f;
+
+  // Reds
+  // --color-red-light: #f2f1f0;
+  // --color-red-medium: #404040;
+  // --color-red-dark: #0d0d0d;
+
+  // Background colours
+  --color-background: var(--color-light);
+  --color-background-soft: #2d2b42;
+
+  // Text colours
+  --color-text: var(--color-dark);
+  --color-text-soft: var(--color-medium);
+
+  // Random colours
+  --card-color: #cac9b7;
+  --light: var(--color-green-light);
+  --medium: var(--color-green-medium);
+  --dark: var(--color-green-dark);
+}

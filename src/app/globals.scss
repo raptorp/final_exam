@@ -1,0 +1,98 @@
+@import "variables";
+@font-face {
+  font-family: "Ghost";
+  src: url("../../public/fonts/ghosthey-regular.ttf") format("truetype");
+}
+
+body {
+  // background-color: var(--color-background);
+  background-color: var(--card-color);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+}
+
+.container {
+  width: 1536px;
+  width: 1344px;
+  margin: auto;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// *******************
+// ***** DESKTOP *****
+// *******************
+
+@media (max-width: 1344px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+// *******************
+// ***** LAPTOPS *****
+// *******************
+
+@media (max-width: 1180px) {
+  .container {
+    width: 1024px;
+    padding: 0 20px;
+  }
+}
+
+// *******************
+// ***** TABLETS *****
+// *******************
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+// ***************************
+// ***** BIG SMARTPHONES *****
+// ***************************
+
+@media (max-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+
+// ******************************
+// ***** MEDIUM SMARTPHONES *****
+// ******************************
+
+@media (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
+}
+
+// *****************************
+// ***** SMALL SMARTPHONES *****
+// *****************************
+
+@media (max-width: 475px) {
+  .container {
+    width: 380px;
+  }
+}

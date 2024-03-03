@@ -1,0 +1,17 @@
+.container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 50px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.logo {
+  width: 190px;
+  height: 53px;
+  position: relative;
+  filter: grayscale(50%);
+}

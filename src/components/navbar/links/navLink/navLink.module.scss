@@ -1,0 +1,21 @@
+.container {
+  min-width: 100px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+
+  border: 2px solid transparent;
+}
+
+$text: var(--color-yellow-dark);
+$box: var(--color-yellow-medium);
+
+.active {
+  color: $text;
+  // border: 2px solid $box;
+}
+
+// .active::before {
+//   content: "> ";
+// }

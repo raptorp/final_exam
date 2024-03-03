@@ -1,0 +1,83 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  border: 3px solid var(--color-green-light);
+  background-color: var(--color-yellow-light);
+  padding: 6.5rem;
+
+  width: 60%;
+
+  align-self: center;
+
+  margin: 3rem;
+}
+
+.title {
+  font-size: 54px;
+  align-self: center;
+  color: var(--color-green-dark);
+}
+
+.link {
+  align-self: center;
+  color: var(--color-green-dark);
+}
+
+.link:hover {
+  color: var(--color-yellow-dark);
+}
+
+.wip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+
+  h1 {
+    padding: 2rem 3rem;
+    background-color: var(--color-yellow-light);
+    border: 1px solid var(--color-yellow-dark);
+    border-radius: 8px;
+
+    color: var(--color-yellow-dark);
+  }
+}
+
+// *******************
+// ***** TOOLTIP *****
+// *******************
+
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  color: var(--color-light);
+
+  width: 100%;
+}
+.tooltip_button:hover ~ .tooltip_container {
+  visibility: visible;
+}
+
+.tooltip_container {
+  position: absolute;
+  bottom: -150%;
+  visibility: hidden;
+  // visibility: visible;
+
+  width: fit-content;
+}
+
+.tooltip_text {
+  background: var(--color-green-dark);
+  border-radius: 4px;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: center;
+
+  font-size: 14px;
+}
