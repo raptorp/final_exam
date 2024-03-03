@@ -5,6 +5,8 @@ import { getUser } from "@/lib/data";
 import SmallInfoCard from "../smallInfoCard/smallInfoCard";
 import TinyCard from "../tinyCard/tinyCard";
 
+import noAvatar from "../../../../public/images/noAvatar.png";
+
 const ProfileCard = async () => {
   const user = await getUser();
 
@@ -21,7 +23,7 @@ const ProfileCard = async () => {
             <div className={styles.profile__avatar__decoration}>
               <div className={styles.profile__avatar__container}>
                 <Image
-                  src={user.userImg || "/images/noAvatar.png"}
+                  src={user.userImg || noAvatar}
                   alt="About Image"
                   fill
                   className={styles.profile__avatar__img}

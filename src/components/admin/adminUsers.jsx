@@ -4,6 +4,8 @@ import Image from "next/image";
 import { deleteUser } from "@/lib/actions";
 import Card from "@/components/containers/card/card";
 
+import noAvatar from "../../../public/images/noAvatar.png";
+
 const AdminUsers = async () => {
   const users = await getUsers();
 
@@ -21,7 +23,7 @@ const AdminUsers = async () => {
             <div className={styles.user__container} key={user.id}>
               <div className={styles.user__detail}>
                 <Image
-                  src={user.img || "/images/noAvatar.png"}
+                  src={user.img || noAvatar}
                   alt=""
                   width={50}
                   height={50}

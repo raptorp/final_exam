@@ -4,6 +4,8 @@ import styles from "./dashboardCards.module.scss";
 import { getCharacters } from "@/lib/data";
 import SmallInfoCard from "../smallInfoCard/smallInfoCard";
 
+import noAvatar from "../../../../public/images/noAvatar.png";
+
 const FocusCard = async () => {
   let characters = await getCharacters();
 
@@ -69,7 +71,7 @@ const FocusCard = async () => {
               <div className={styles.focus__avatar__decoration}>
                 <div className={styles.focus__avatar__container}>
                   <Image
-                    src={activeCharacter.charImg || "/images/noAvatar.png"}
+                    src={activeCharacter.charImg || noAvatar}
                     alt="About Image"
                     fill
                     className={styles.focus__avatar__img}
